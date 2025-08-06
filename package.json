@@ -23,7 +23,7 @@
   "author": "Amel & Tarek",
   "license": "UNLICENSED",
   "dependencies": {
-    "date-fns": "^3.0.0",
+    "date-fns": "^4.1.0",
     "yarn": "^1.22.22"
   }
 }
