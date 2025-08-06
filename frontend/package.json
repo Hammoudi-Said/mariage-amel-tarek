@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://votrenom.github.io/nom-du-repo",
+  "homepage": "https://Hammoudi-Said.github.io/mariage-amel-tarek",
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-accordion": "^1.2.8",
