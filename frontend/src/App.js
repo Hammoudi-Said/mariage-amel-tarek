@@ -13,7 +13,7 @@ import { Toaster } from "./components/ui/toaster";
 function App() {
   return (
     <div className="App min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/nom-du-repo' : ''}>
         <Navigation />
         <div className="min-h-screen">
           <Routes>
