@@ -17,10 +17,17 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
 
 ### Option 1: Automatic Deployment (Recommended)
 
+**Choose one of these workflows** (all are configured and ready):
+
+1. **Main Workflow** (`deploy.yml`): Uses `yarn install --prefer-offline --pure-lockfile`
+2. **Simple Workflow** (`deploy-simple.yml`): Uses `yarn install --prefer-offline --pure-lockfile`  
+3. **NPM Workflow** (`deploy-npm.yml`): Uses npm instead of yarn (fallback option)
+
+**Steps:**
 1. **Push to GitHub**:
    ```bash
    git add .
-   git commit -m "Configure for GitHub Pages deployment"
+   git commit -m "Deploy wedding website to GitHub Pages"
    git push origin main
    ```
 
