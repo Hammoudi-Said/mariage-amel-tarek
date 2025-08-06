@@ -142,6 +142,18 @@
           agent: "main"
           comment: "Created comprehensive GitHub Actions workflow for automatic deployment to GitHub Pages on push to main/master branch."
 
+  - task: "Fix dependency resolution conflicts (npm ERESOLVE error)"
+    implemented: true
+    working: true
+    file: "frontend/package.json, frontend/src/components/ui/calendar.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Fixed date-fns/react-day-picker version conflict by upgrading react-day-picker to v9.8.1, updated React to 19.1.1, migrated calendar component to new Chevron API, and ensured yarn compatibility. Dependency installation and build process now work correctly."
+
   - task: "Update Google Form integration for RSVP"
     implemented: true
     working: true
