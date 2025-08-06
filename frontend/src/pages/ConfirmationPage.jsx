@@ -82,7 +82,7 @@ const ConfirmationPage = () => {
             <CheckCircle2 className="h-8 w-8 text-green-600 mb-4" />
             <h3 className="text-lg font-serif text-green-900 mb-3">Après avoir rempli le formulaire</h3>
             <p className="text-stone-700 leading-relaxed">
-              Vous recevrez un email de confirmation. Nous vous enverrons ensuite tous les détails 
+              Nous recevrons automatiquement votre réponse. Nous vous enverrons ensuite tous les détails 
               pratiques dans les semaines qui précèdent le mariage.
             </p>
           </Card>
