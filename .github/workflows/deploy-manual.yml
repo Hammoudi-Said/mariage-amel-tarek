@@ -1,0 +1,41 @@
+name: Deploy to GitHub Pages (Manual)
+
+on:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'yarn'
+        cache-dependency-path: frontend/yarn.lock
+
+    - name: Install dependencies
+      working-directory: ./frontend
+      run: yarn install --frozen-lockfile
+
+    - name: Build the app
+      working-directory: ./frontend
+      run: yarn build
+
+    - name: Configure git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Deploy to GitHub Pages
+      working-directory: ./frontend
+      run: |
+        npx gh-pages -d build -u "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
