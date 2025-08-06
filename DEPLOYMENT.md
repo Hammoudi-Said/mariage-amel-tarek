@@ -109,6 +109,13 @@ To update your website:
 
 ## ⚠️ Troubleshooting
 
+### GitHub Actions Permission Error:
+```
+remote: Permission to Hammoudi-Said/mariage-amel-tarek.git denied to github-actions[bot].
+Error: Action failed with "The process '/usr/bin/git' failed with exit code 128"
+```
+**Solution**: Fixed! Follow the repository permissions setup in the deployment steps above.
+
 ### Node.js Engine Compatibility Error:
 ```
 error react-router-dom@7.5.1: The engine "node" is incompatible with this module. Expected version ">=20.0.0". Got "18.20.8"
