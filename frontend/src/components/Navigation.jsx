@@ -11,6 +11,7 @@ const Navigation = () => {
     { path: "/", label: "Accueil" },
     { path: "/details", label: "Détails" },
     { path: "/infos-utiles", label: "Infos utiles" },
+    { path: "/confirmation", label: "Confirmation" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -21,7 +22,7 @@ const Navigation = () => {
           onClick={() => setIsOpen(!isOpen)}
           variant="outline"
           size="lg"
-          className="bg-white/90 backdrop-blur-sm border-amber-200/50 shadow-lg hover:bg-white hover:shadow-xl transition-all duration-300 text-amber-900"
+          className="bg-white/90 backdrop-blur-sm border-amber-200/50 shadow-lg hover:bg-white hover:shadow-xl transition-all duration-300 text-amber-900 hover:border-rose-300"
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           <span className="ml-2 font-serif">Menu</span>
@@ -34,9 +35,9 @@ const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 text-amber-900 hover:bg-amber-50 transition-colors duration-200 font-serif ${
+                className={`block px-4 py-3 text-amber-900 hover:bg-gradient-to-r hover:from-amber-50 hover:to-rose-50 transition-all duration-200 font-serif ${
                   location.pathname === item.path
-                    ? "bg-amber-50 border-r-2 border-amber-600 font-medium"
+                    ? "bg-gradient-to-r from-amber-50 to-rose-50 border-r-2 border-amber-600 font-medium"
                     : ""
                 }`}
               >
