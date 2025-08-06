@@ -34,10 +34,10 @@ jobs:
 
     - name: Configure git
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git config --global user.name 'hammoudi'
+        git config --global user.email 'hammoudi.pro6@gmail.com'
 
     - name: Deploy to GitHub Pages
       working-directory: ./frontend
       run: |
-        npx gh-pages -d build -u "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+        npx gh-pages -d build -u "hammoudi hammoudi.pro6@gmail.com"

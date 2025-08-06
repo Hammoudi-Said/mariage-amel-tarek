@@ -20,6 +20,7 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
 **Use the manual workflow** (`deploy-manual.yml`) which uses the gh-pages package:
 
 **Steps:**
+
 1. **Fix Repository Permissions** (CRITICAL):
    - Go to your GitHub repository
    - Navigate to **Settings** → **Actions** → **General**
@@ -28,6 +29,7 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
    - Click **Save**
 
 2. **Push to GitHub**:
+
    ```bash
    git add .
    git commit -m "Deploy wedding website to GitHub Pages"
@@ -41,17 +43,19 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
    - Click **Save**
 
 4. **Access Your Website**:
-   - Visit: https://Hammoudi-Said.github.io/mariage-amel-tarek
+   - Visit: <https://Hammoudi-Said.github.io/mariage-amel-tarek>
    - It may take a few minutes for the first deployment
 
 ### Option 2: Manual Deployment
 
 1. **Install dependencies**:
+
    ```bash
    yarn install
    ```
 
 2. **Deploy manually**:
+
    ```bash
    cd frontend
    yarn deploy
@@ -59,33 +63,38 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
 
 ## 🔧 GitHub Repository Settings
 
-### Required Settings:
+### Required Settings
+
 1. **Repository must be public** (for GitHub Pages free tier)
 2. **Actions must be enabled**:
    - Go to **Settings** → **Actions** → **General**
    - Enable "Allow all actions and reusable workflows"
 
-### GitHub Pages Configuration:
+### GitHub Pages Configuration
+
 - **Settings** → **Pages**
 - **Source**: Deploy from a branch OR GitHub Actions
 - If using branch: Select **gh-pages** branch and **/ (root)** folder
 
 ## 📁 What Was Changed
 
-### Removed:
+### Removed
+
 - ✅ FastAPI backend (`backend/` folder dependencies)
 - ✅ MongoDB database requirements
 - ✅ Backend API calls
 - ✅ Unused `axios` dependency
 - ✅ Backend URL from environment variables
 
-### Added:
+### Added
+
 - ✅ GitHub Actions workflow (`.github/workflows/deploy.yml`)
 - ✅ Comprehensive README documentation
 - ✅ Root package.json for easier commands
 - ✅ Production build configuration
 
-### Kept:
+### Kept
+
 - ✅ All React frontend functionality
 - ✅ Beautiful wedding website design
 - ✅ Google Form integration for RSVPs
@@ -95,6 +104,7 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
 ## 🧪 Testing Your Deployment
 
 After deployment, test these features:
+
 1. **Navigation**: All pages load correctly
 2. **Routing**: URL changes work with browser back/forward
 3. **RSVP Form**: "Confirmation" page opens Google Form
@@ -104,6 +114,7 @@ After deployment, test these features:
 ## 🔄 Future Updates
 
 To update your website:
+
 1. Make changes to your code
 2. Commit and push to main branch
 3. GitHub Actions automatically rebuilds and deploys
@@ -111,42 +122,52 @@ To update your website:
 
 ## ⚠️ Troubleshooting
 
-### GitHub Actions Permission Error:
+### GitHub Actions Permission Error
+
 ```
-remote: Permission to Hammoudi-Said/mariage-amel-tarek.git denied to github-actions[bot].
+remote: Permission to Hammoudi-Said/mariage-amel-tarek.git denied to hammoudi.
 Error: Action failed with "The process '/usr/bin/git' failed with exit code 128"
 ```
+
 **Solution**: Fixed! Follow the repository permissions setup in the deployment steps above.
 
-### Node.js Engine Compatibility Error:
+### Node.js Engine Compatibility Error
+
 ```
 error react-router-dom@7.5.1: The engine "node" is incompatible with this module. Expected version ">=20.0.0". Got "18.20.8"
 ```
+
 **Solution**: This has been fixed! Downgraded react-router-dom from v7.5.1 to v6.30.1 which is compatible with Node.js 18+.
 
-### Yarn Lockfile Error in GitHub Actions:
+### Yarn Lockfile Error in GitHub Actions
+
 ```
 error Your lockfile needs to be updated, but yarn was run with `--frozen-lockfile`.
 ```
+
 **Solution**: This has been fixed! The yarn.lock file is now updated and synchronized.
 
-### Site Not Loading:
+### Site Not Loading
+
 - Check GitHub Pages is enabled in repository settings
 - Ensure repository is public
 - Wait a few minutes for DNS propagation
 
-### 404 Errors on Page Refresh:
+### 404 Errors on Page Refresh
+
 - This is normal for client-side routing
 - Users should use the navigation menu
 - Consider adding a custom 404 page if needed
 
-### Form Not Working:
+### Form Not Working
+
 - Verify the Google Form URL in `ConfirmationPage.jsx`
 - Ensure Google Form is set to "Anyone can respond"
 
 ## 📞 Support
 
 If you encounter issues:
+
 1. Check the GitHub Actions tab for deployment logs
 2. Verify all settings match this guide
 3. Contact the developer who set this up
@@ -154,4 +175,4 @@ If you encounter issues:
 ---
 
 **Your website is ready! 🎉**
-**URL: https://Hammoudi-Said.github.io/mariage-amel-tarek**
+**URL: <https://Hammoudi-Said.github.io/mariage-amel-tarek>**
