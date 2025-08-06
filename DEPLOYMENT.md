@@ -101,6 +101,12 @@ To update your website:
 
 ## ⚠️ Troubleshooting
 
+### Yarn Lockfile Error in GitHub Actions:
+```
+error Your lockfile needs to be updated, but yarn was run with `--frozen-lockfile`.
+```
+**Solution**: This has been fixed! The yarn.lock file is now updated and synchronized.
+
 ### Site Not Loading:
 - Check GitHub Pages is enabled in repository settings
 - Ensure repository is public
