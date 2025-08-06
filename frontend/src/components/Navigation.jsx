@@ -34,7 +34,10 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  window.scrollTo(0, 0);
+                }}
                 className={`block px-4 py-3 text-amber-900 hover:bg-gradient-to-r hover:from-amber-50 hover:to-rose-50 transition-all duration-200 font-serif ${
                   location.pathname === item.path
                     ? "bg-gradient-to-r from-amber-50 to-rose-50 border-r-2 border-amber-600 font-medium"
