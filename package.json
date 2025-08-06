@@ -1,0 +1,20 @@
+{
+  "name": "mariage-amel-tarek",
+  "version": "1.0.0",
+  "description": "Wedding website for Amel & Tarek",
+  "scripts": {
+    "install": "cd frontend && yarn install",
+    "start": "cd frontend && yarn start",
+    "build": "cd frontend && yarn build",
+    "deploy": "cd frontend && yarn deploy",
+    "test": "cd frontend && yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hammoudi-Said/mariage-amel-tarek.git"
+  },
+  "homepage": "https://Hammoudi-Said.github.io/mariage-amel-tarek",
+  "keywords": ["wedding", "react", "github-pages"],
+  "author": "Amel & Tarek",
+  "license": "private"
+}
