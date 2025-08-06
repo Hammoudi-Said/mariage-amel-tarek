@@ -108,6 +108,12 @@ To update your website:
 
 ## ⚠️ Troubleshooting
 
+### Node.js Engine Compatibility Error:
+```
+error react-router-dom@7.5.1: The engine "node" is incompatible with this module. Expected version ">=20.0.0". Got "18.20.8"
+```
+**Solution**: This has been fixed! Downgraded react-router-dom from v7.5.1 to v6.30.1 which is compatible with Node.js 18+.
+
 ### Yarn Lockfile Error in GitHub Actions:
 ```
 error Your lockfile needs to be updated, but yarn was run with `--frozen-lockfile`.
