@@ -1,20 +1,11 @@
-# This workflow is disabled - use deploy.yml instead  
-name: Deploy with NPM (DISABLED)
+name: Deploy with NPM (Simple)
 
-# Commented out to disable this workflow
-# on:
-#   push:
-#     branches: [ main, master ]
+on:
+  push:
+    branches: [ main, master ]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: write
 
 jobs:
   deploy:
@@ -37,9 +28,12 @@ jobs:
       working-directory: ./frontend
       run: npm run build
 
+    - name: Configure git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./frontend/build
+      working-directory: ./frontend
+      run: |
+        npx gh-pages -d build -u "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
