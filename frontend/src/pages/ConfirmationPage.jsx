@@ -121,5 +121,3 @@ const ConfirmationPage = () => {
 };
 
 export default ConfirmationPage;
-
-export default ConfirmationPage;
