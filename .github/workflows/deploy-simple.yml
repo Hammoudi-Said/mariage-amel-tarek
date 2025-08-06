@@ -1,10 +1,8 @@
-# This workflow is disabled - use deploy.yml instead
-name: Deploy with peaceiris (DISABLED)
+name: Deploy React App to GitHub Pages
 
-# Commented out to disable this workflow
-# on:
-#   push:
-#     branches: [ main, master ]
+on:
+  push:
+    branches: [ main, master ]
 
 permissions:
   contents: read
