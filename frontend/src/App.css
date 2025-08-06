@@ -16,6 +16,74 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .text-responsive-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .text-responsive-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .text-responsive-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  
+  .text-responsive-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  
+  .text-responsive-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .text-responsive-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  
+  .text-responsive-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  
+  .px-responsive {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py-responsive {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .gap-responsive {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .text-responsive-4xl {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  .px-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .gap-responsive {
+    gap: 1.5rem;
+  }
+}
+
 /* Custom animations */
 @keyframes fadeInUp {
   from {
@@ -73,16 +141,6 @@ html {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Custom hover effects for cards */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
 /* Fresh gradient animations */
 .gradient-animation {
   background: linear-gradient(-45deg, #fef3c7, #fde68a, #f59e0b, #d97706);
@@ -116,6 +174,16 @@ html {
     opacity: 0.8;
     transform: scale(1.05);
   }
+}
+
+/* Custom hover effects for cards */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* Custom scrollbar */
@@ -178,17 +246,6 @@ textarea:focus-visible {
   box-shadow: 0 20px 40px rgba(245, 158, 11, 0.15);
 }
 
-/* Responsive typography */
-@media (max-width: 768px) {
-  .text-responsive-xl {
-    font-size: 1.5rem;
-  }
-  
-  .text-responsive-2xl {
-    font-size: 1.75rem;
-  }
-}
-
 /* Loading states */
 .loading-shimmer {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
@@ -216,4 +273,79 @@ textarea:focus-visible {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .container-mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .card-mobile {
+    padding: 1.5rem;
+  }
+  
+  .text-mobile-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-mobile-base {
+    font-size: 1rem;
+  }
+  
+  .text-mobile-lg {
+    font-size: 1.125rem;
+  }
+  
+  .text-mobile-xl {
+    font-size: 1.25rem;
+  }
+  
+  .text-mobile-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-mobile-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .gap-mobile {
+    gap: 1rem;
+  }
+  
+  .grid-mobile-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container-tablet {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .card-tablet {
+    padding: 2rem;
+  }
+  
+  .gap-tablet {
+    gap: 1.5rem;
+  }
+}
+
+/* Ensure buttons are touch-friendly on mobile */
+@media (max-width: 768px) {
+  button, 
+  .btn, 
+  a[role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Ensure adequate spacing for touch */
+  .touch-target {
+    padding: 12px 16px;
+  }
 }
