@@ -17,27 +17,28 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
 
 ### Option 1: Automatic Deployment (Recommended)
 
-**Choose one of these workflows** (all are configured and ready):
-
-1. **Main Workflow** (`deploy.yml`): Uses `yarn install --prefer-offline --pure-lockfile`
-2. **Simple Workflow** (`deploy-simple.yml`): Uses `yarn install --prefer-offline --pure-lockfile`  
-3. **NPM Workflow** (`deploy-npm.yml`): Uses npm instead of yarn (fallback option)
+**Use the main workflow** (`deploy.yml`) which uses official GitHub Actions:
 
 **Steps:**
-1. **Push to GitHub**:
+1. **Fix Repository Permissions**:
+   - Go to your GitHub repository
+   - Navigate to **Settings** → **Actions** → **General**
+   - Under **"Workflow permissions"**, select **"Read and write permissions"**
+   - Check **"Allow GitHub Actions to create and approve pull requests"**
+   - Click **Save**
+
+2. **Enable GitHub Pages**:
+   - Go to **Settings** → **Pages**
+   - Under **Source**, select **"GitHub Actions"** (not "Deploy from a branch")
+
+3. **Push to GitHub**:
    ```bash
    git add .
    git commit -m "Deploy wedding website to GitHub Pages"
    git push origin main
    ```
 
-2. **Enable GitHub Pages**:
-   - Go to your repository on GitHub
-   - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **"GitHub Actions"**
-   - The workflow will automatically run and deploy your site
-
-3. **Access Your Website**:
+4. **Access Your Website**:
    - Visit: https://Hammoudi-Said.github.io/mariage-amel-tarek
    - It may take a few minutes for the first deployment
 
