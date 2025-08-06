@@ -171,3 +171,5 @@
 ## agent_communication:
     - agent: "main"
       message: "Successfully converted full-stack wedding website to static site ready for GitHub Pages deployment. Removed backend dependencies, configured proper routing, created GitHub Actions workflow, and updated documentation. Site is ready to deploy."
+    - agent: "main"
+      message: "Fixed critical dependency resolution conflicts: Updated react-day-picker from 8.10.1 to 9.8.1 to support date-fns v4.1.0, upgraded React to 19.1.1, updated multiple dependencies for compatibility, migrated calendar component to react-day-picker v9 API (IconLeft/IconRight → Chevron component). Build process now works correctly with both yarn and resolves npm ERESOLVE errors."
