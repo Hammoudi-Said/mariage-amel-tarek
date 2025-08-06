@@ -1,8 +1,10 @@
-name: Deploy with NPM (Alternative)
+# This workflow is disabled - use deploy.yml instead  
+name: Deploy with NPM (DISABLED)
 
-on:
-  push:
-    branches: [ main, master ]
+# Commented out to disable this workflow
+# on:
+#   push:
+#     branches: [ main, master ]
 
 permissions:
   contents: read
