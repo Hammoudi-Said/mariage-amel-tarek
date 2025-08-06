@@ -15,7 +15,15 @@
     "url": "https://github.com/Hammoudi-Said/mariage-amel-tarek.git"
   },
   "homepage": "https://Hammoudi-Said.github.io/mariage-amel-tarek",
-  "keywords": ["wedding", "react", "github-pages"],
+  "keywords": [
+    "wedding",
+    "react",
+    "github-pages"
+  ],
   "author": "Amel & Tarek",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "date-fns": "^3.0.0",
+    "yarn": "^1.22.22"
+  }
 }
