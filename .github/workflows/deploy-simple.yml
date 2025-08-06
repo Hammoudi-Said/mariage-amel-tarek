@@ -1,8 +1,10 @@
-name: Deploy React App to GitHub Pages
+# This workflow is disabled - using deploy-manual.yml instead
+name: Deploy React App to GitHub Pages (DISABLED)
 
-on:
-  push:
-    branches: [ main, master ]
+# Commented out to disable this workflow
+# on:
+#   push:
+#     branches: [ main, master ]
 
 permissions:
   contents: write
