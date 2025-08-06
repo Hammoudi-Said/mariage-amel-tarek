@@ -17,26 +17,28 @@ Your repository is now **fully ready** for GitHub Pages deployment with:
 
 ### Option 1: Automatic Deployment (Recommended)
 
-**Use the main workflow** (`deploy.yml`) which uses official GitHub Actions:
+**Use the manual workflow** (`deploy-manual.yml`) which uses the gh-pages package:
 
 **Steps:**
-1. **Fix Repository Permissions**:
+1. **Fix Repository Permissions** (CRITICAL):
    - Go to your GitHub repository
    - Navigate to **Settings** → **Actions** → **General**
    - Under **"Workflow permissions"**, select **"Read and write permissions"**
    - Check **"Allow GitHub Actions to create and approve pull requests"**
    - Click **Save**
 
-2. **Enable GitHub Pages**:
-   - Go to **Settings** → **Pages**
-   - Under **Source**, select **"GitHub Actions"** (not "Deploy from a branch")
-
-3. **Push to GitHub**:
+2. **Push to GitHub**:
    ```bash
    git add .
    git commit -m "Deploy wedding website to GitHub Pages"
    git push origin main
    ```
+
+3. **Enable GitHub Pages** (after first deployment):
+   - Go to **Settings** → **Pages**
+   - Under **Source**, select **"Deploy from a branch"**
+   - Select **"gh-pages"** branch and **"/ (root)"** folder
+   - Click **Save**
 
 4. **Access Your Website**:
    - Visit: https://Hammoudi-Said.github.io/mariage-amel-tarek
