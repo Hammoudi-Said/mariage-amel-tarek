@@ -28,12 +28,10 @@ jobs:
       working-directory: ./frontend
       run: npm run build
 
-    - name: Configure git
-      run: |
-        git config --global user.name 'hammoudi'
-        git config --global user.email 'hammoudi.pro6@gmail.com'
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: frontend/build
 
     - name: Deploy to GitHub Pages
-      working-directory: ./frontend
-      run: |
-        npx gh-pages -d build -u "hammoudi <hammoudi.pro6@gmail.com>"
+      uses: actions/deploy-pages@v4
