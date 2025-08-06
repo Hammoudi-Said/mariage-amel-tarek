@@ -1,27 +1,27 @@
 import React from "react";
 import { Card } from "../components/ui/card";
-import { 
-  MapPin, 
-  Clock, 
-  Shirt, 
-  Gift, 
-  Camera, 
-  Music, 
+import {
+  MapPin,
+  Clock,
+  Shirt,
+  Gift,
+  Camera,
+  Music,
   Utensils,
-  Heart 
+  Heart
 } from "lucide-react";
 
 const InfosUtilesPage = () => {
   const infos = [
-    {
-      icon: <Shirt className="h-6 w-6 text-amber-600" />,
-      title: "Code vestimentaire",
-      content: "Tenue de soirée chic. Les couleurs claires et pastelles sont les bienvenues pour s'harmoniser avec l'élégance du château."
-    },
+    // {
+    //   icon: <Shirt className="h-6 w-6 text-amber-600" />,
+    //   title: "Code vestimentaire",
+    //   content: "Tenue de soirée chic. Les couleurs claires et pastelles sont les bienvenues pour s'harmoniser avec l'élégance du château."
+    // },
     {
       icon: <Gift className="h-6 w-6 text-amber-600" />,
       title: "Liste de mariage",
-      content: "Votre présence est le plus beau des cadeaux. Si vous souhaitez nous faire plaisir, une enveloppe sera parfaite."
+      content: "Votre présence à nos côtés pour célébrer ce grand jour serait un immense cadeau pour nous."
     },
     {
       icon: <Camera className="h-6 w-6 text-amber-600" />,
@@ -38,11 +38,11 @@ const InfosUtilesPage = () => {
       title: "Restauration",
       content: "Menu raffiné servi à 20h. Cocktail dînatoire dès 17h pour patienter en beauté. Informez-nous de vos allergies alimentaires."
     },
-    {
-      icon: <MapPin className="h-6 w-6 text-amber-600" />,
-      title: "Hébergement",
-      content: "Plusieurs hôtels à proximité de Gambais et Saint Cyr l'école. N'hésitez pas à nous demander des recommandations."
-    }
+    // {
+    //   icon: <MapPin className="h-6 w-6 text-amber-600" />,
+    //   title: "Hébergement",
+    //   content: "Plusieurs hôtels à proximité de Gambais et Saint Cyr l'école. N'hésitez pas à nous demander des recommandations."
+    // }
   ];
 
   return (
@@ -88,14 +88,14 @@ const InfosUtilesPage = () => {
               N'hésitez pas à nous contacter pour toute information complémentaire.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-lg">
-              <a 
+              <a
                 href="tel:0651572363"
                 className="text-amber-800 hover:text-amber-900 transition-colors font-medium"
               >
                 Amel : 06 51 57 23 63
               </a>
               <span className="hidden sm:inline text-amber-600">•</span>
-              <a 
+              <a
                 href="tel:0763701497"
                 className="text-amber-800 hover:text-amber-900 transition-colors font-medium"
               >
