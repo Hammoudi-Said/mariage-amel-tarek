@@ -1,12 +1,12 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, HTTPException
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field
-from typing import List
+from pydantic import BaseModel, Field, EmailStr
+from typing import List, Optional
 import uuid
 from datetime import datetime
 
@@ -35,6 +35,31 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+class WeddingConfirmation(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    firstName: str
+    lastName: str
+    phone: Optional[str] = None
+    email: Optional[str] = None
+    numberOfGuests: int = 1
+    attendsCeremony: bool = True
+    attendsReception: bool = True
+    allergies: Optional[str] = None
+    message: Optional[str] = None
+    submittedAt: datetime = Field(default_factory=datetime.utcnow)
+
+class WeddingConfirmationCreate(BaseModel):
+    firstName: str
+    lastName: str
+    phone: Optional[str] = None
+    email: Optional[str] = None
+    numberOfGuests: int = 1
+    attendsCeremony: bool = True
+    attendsReception: bool = True
+    allergies: Optional[str] = None
+    message: Optional[str] = None
+    submittedAt: Optional[str] = None
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
@@ -51,6 +76,65 @@ async def create_status_check(input: StatusCheckCreate):
 async def get_status_checks():
     status_checks = await db.status_checks.find().to_list(1000)
     return [StatusCheck(**status_check) for status_check in status_checks]
+
+# Wedding confirmation endpoints
+@api_router.post("/confirmations", response_model=WeddingConfirmation)
+async def create_confirmation(input: WeddingConfirmationCreate):
+    try:
+        confirmation_dict = input.dict()
+        
+        # Parse submittedAt if provided as string
+        if confirmation_dict.get('submittedAt') and isinstance(confirmation_dict['submittedAt'], str):
+            try:
+                confirmation_dict['submittedAt'] = datetime.fromisoformat(confirmation_dict['submittedAt'].replace('Z', '+00:00'))
+            except:
+                confirmation_dict['submittedAt'] = datetime.utcnow()
+        else:
+            confirmation_dict['submittedAt'] = datetime.utcnow()
+            
+        confirmation_obj = WeddingConfirmation(**confirmation_dict)
+        
+        # Save to database
+        await db.wedding_confirmations.insert_one(confirmation_obj.dict())
+        
+        logger.info(f"New wedding confirmation received from {confirmation_obj.firstName} {confirmation_obj.lastName}")
+        return confirmation_obj
+        
+    except Exception as e:
+        logger.error(f"Error creating confirmation: {e}")
+        raise HTTPException(status_code=500, detail="Error saving confirmation")
+
+@api_router.get("/confirmations", response_model=List[WeddingConfirmation])
+async def get_confirmations():
+    try:
+        confirmations = await db.wedding_confirmations.find().sort("submittedAt", -1).to_list(1000)
+        return [WeddingConfirmation(**confirmation) for confirmation in confirmations]
+    except Exception as e:
+        logger.error(f"Error retrieving confirmations: {e}")
+        raise HTTPException(status_code=500, detail="Error retrieving confirmations")
+
+@api_router.get("/confirmations/stats")
+async def get_confirmation_stats():
+    try:
+        total_confirmations = await db.wedding_confirmations.count_documents({})
+        total_guests = await db.wedding_confirmations.aggregate([
+            {"$group": {"_id": None, "total": {"$sum": "$numberOfGuests"}}}
+        ]).to_list(1)
+        
+        ceremony_count = await db.wedding_confirmations.count_documents({"attendsCeremony": True})
+        reception_count = await db.wedding_confirmations.count_documents({"attendsReception": True})
+        
+        total_guests_count = total_guests[0]["total"] if total_guests else 0
+        
+        return {
+            "totalConfirmations": total_confirmations,
+            "totalGuests": total_guests_count,
+            "ceremonyAttendees": ceremony_count,
+            "receptionAttendees": reception_count
+        }
+    except Exception as e:
+        logger.error(f"Error getting stats: {e}")
+        raise HTTPException(status_code=500, detail="Error retrieving statistics")
 
 # Include the router in the main app
 app.include_router(api_router)
