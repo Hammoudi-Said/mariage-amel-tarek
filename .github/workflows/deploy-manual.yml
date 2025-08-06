@@ -24,7 +24,7 @@ jobs:
 
     - name: Install dependencies
       working-directory: ./frontend
-      run: yarn install --frozen-lockfile
+      run: yarn install
 
     - name: Build the app
       working-directory: ./frontend
