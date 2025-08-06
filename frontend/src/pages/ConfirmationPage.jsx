@@ -4,8 +4,8 @@ import { Button } from "../components/ui/button";
 import { Heart, Users, Utensils, Phone, MessageCircle, ExternalLink, CheckCircle2 } from "lucide-react";
 
 const ConfirmationPage = () => {
-  // URL du Google Form à créer
-  const GOOGLE_FORM_URL = "https://forms.gle/VOTRE_GOOGLE_FORM_ID";
+  // URL du Google Form - remplacez par votre vraie URL Google Form
+  const GOOGLE_FORM_URL = "https://forms.gle/votre-form-id";
 
   const handleOpenGoogleForm = () => {
     window.open(GOOGLE_FORM_URL, '_blank');
