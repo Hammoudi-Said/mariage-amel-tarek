@@ -76,7 +76,7 @@ const Footer = () => {
                 <p className="text-stone-700 mb-6 leading-relaxed">
                   Aidez-nous à organiser cette journée parfaite en confirmant votre présence avant le 20 septembre 2025.
                 </p>
-                <Link to="/confirmation">
+                <Link to="/confirmation" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-serif px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                     Je confirme ma présence
                   </Button>
