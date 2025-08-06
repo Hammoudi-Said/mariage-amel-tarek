@@ -33,14 +33,12 @@ jobs:
           cache-dependency-path: frontend/yarn.lock
 
       - name: Install dependencies
-        run: |
-          cd frontend
-          yarn install --frozen-lockfile
+        working-directory: ./frontend
+        run: yarn install --frozen-lockfile
 
       - name: Build
-        run: |
-          cd frontend
-          yarn build
+        working-directory: ./frontend
+        run: yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
