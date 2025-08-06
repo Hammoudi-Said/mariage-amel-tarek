@@ -7,7 +7,8 @@
     "start": "cd frontend && yarn start",
     "build": "cd frontend && yarn build",
     "deploy": "cd frontend && yarn deploy",
-    "test": "cd frontend && yarn test"
+    "test": "cd frontend && yarn test",
+    "clean": "cd frontend && rm -rf build node_modules && yarn install"
   },
   "repository": {
     "type": "git",
