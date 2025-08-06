@@ -1,8 +1,10 @@
-name: Deploy to GitHub Pages (Manual)
+# This workflow is disabled - using deploy-no-cache.yml instead  
+name: Deploy to GitHub Pages (Manual DISABLED)
 
-on:
-  push:
-    branches: [ main, master ]
+# Commented out to disable this workflow
+# on:
+#   push:
+#     branches: [ main, master ]
 
 permissions:
   contents: write
