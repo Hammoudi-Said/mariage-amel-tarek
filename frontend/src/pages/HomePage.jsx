@@ -23,7 +23,7 @@ const HomePage = () => {
     <div className="min-h-screen">
       {/* Hero Section with provided image */}
       <section 
-        className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden"
+        className="min-h-screen flex flex-col items-center justify-end pb-32 px-6 text-center relative overflow-hidden"
         style={{
           backgroundImage: `url('https://customer-assets.emergentagent.com/job_f7c12440-5440-41fc-8bf3-6d8d6ea86fe9/artifacts/k76gx2r5_1754605409302blob.jpg')`,
           backgroundSize: 'cover',
@@ -31,20 +31,8 @@ const HomePage = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-white/10"></div>
-        <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center justify-center">
-          <div className="text-center space-y-8 mb-16">
-            <h1 className="text-2xl md:text-3xl font-serif text-black/90 tracking-wide">
-              MARHABA AU MARIAGE DE
-            </h1>
-            <h2 className="text-6xl md:text-8xl lg:text-9xl text-black leading-none font-bold" style={{fontFamily: "'Dancing Script', cursive"}}>
-              Amel & Tarek
-            </h2>
-            <div className="text-xl md:text-2xl font-serif text-black/80 border-t border-b border-black/40 py-4 inline-block px-12">
-              11 Octobre 2025
-            </div>
-          </div>
-          
+        <div className="absolute inset-0 bg-transparent"></div>
+        <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
           <Button
             onClick={scrollToProgram}
             variant="outline"
