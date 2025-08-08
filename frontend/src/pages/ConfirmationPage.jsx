@@ -104,12 +104,6 @@ const ConfirmationPage = () => {
         {/* Section Avec tout notre amour */}
         <Card className="mt-8 p-8 md:p-12 bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50 border-rose-200/50 shadow-lg">
           <div className="text-center">
-            <div className="mb-6">
-              <p className="text-lg md:text-xl text-stone-800 font-serif leading-relaxed mb-4">
-                Mettre ça à la toute fin de l'onglet « Confirmer votre présence »
-              </p>
-            </div>
-            
             <div className="mb-8">
               <h3 className="text-2xl md:text-3xl font-serif text-rose-700 mb-6 flex items-center justify-center">
                 <Heart className="h-8 w-8 text-rose-500 mr-3" />
