@@ -37,15 +37,15 @@ const DetailsPage = () => {
             </h2>
 
             {/* En voiture */}
-            <Card className="p-8 bg-white/80 backdrop-blur-sm border-amber-200/50 shadow-lg">
+            <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
               <div className="flex items-center mb-6">
-                <Car className="h-6 w-6 text-amber-600 mr-3" />
-                <h3 className="text-2xl font-serif text-amber-900">En voiture</h3>
+                <Car className="h-6 w-6 text-rose-600 mr-3" />
+                <h3 className="text-2xl font-serif text-rose-900">En voiture</h3>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-serif text-lg text-stone-800 mb-3 flex items-center">
-                    <MapPin className="h-4 w-4 text-amber-600 mr-2" />
+                    <MapPin className="h-4 w-4 text-rose-600 mr-2" />
                     Mairie
                   </h4>
                   <p className="text-stone-700">
@@ -54,7 +54,7 @@ const DetailsPage = () => {
                 </div>
                 <div>
                   <h4 className="font-serif text-lg text-stone-800 mb-3 flex items-center">
-                    <MapPin className="h-4 w-4 text-amber-600 mr-2" />
+                    <MapPin className="h-4 w-4 text-rose-600 mr-2" />
                     Château
                   </h4>
                   <p className="text-stone-700 mb-2">
@@ -63,7 +63,7 @@ const DetailsPage = () => {
                   <p className="text-stone-700 font-medium">
                     <strong>"22 Rue de Laverdy 78950 Gambais"</strong>
                   </p>
-                  <p className="text-amber-700 text-sm mt-2 font-medium">
+                  <p className="text-rose-700 text-sm mt-2 font-medium">
                     ✓ Parking disponible au château
                   </p>
                 </div>
