@@ -32,7 +32,7 @@ const DetailsPage = () => {
 
           {/* Section transport */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-serif text-amber-900 text-center mb-8">
+            <h2 className="text-3xl font-serif text-rose-900 text-center mb-8">
               Voici tout ce que vous devez savoir pour vous y rendre
             </h2>
 
