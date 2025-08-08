@@ -7,7 +7,7 @@ const DetailsPage = () => {
     <div className="min-h-screen pt-24 px-6 pb-16">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif text-amber-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-serif text-rose-900 mb-4">
             Détails de la journée
           </h1>
           <p className="text-xl font-serif text-stone-600">
