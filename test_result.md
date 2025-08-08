@@ -118,53 +118,65 @@
           comment: "Successfully removed FastAPI backend and MongoDB dependencies. Replaced RSVP functionality with Google Form integration."
 
 ## frontend:
-  - task: "Configure React app for GitHub Pages deployment"
+  - task: "Moderniser le schéma de couleurs (jaune/marron vers nude/rose)"
     implemented: true
     working: true
-    file: "frontend/package.json, frontend/src/App.js"
+    file: "frontend/src/App.js, frontend/src/components/Navigation.jsx, frontend/src/pages/*.jsx"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
         - working: true
           agent: "main"
-          comment: "Successfully configured homepage URL, basename routing, and removed unused dependencies (axios). Build process working correctly."
-  
-  - task: "Create GitHub Actions workflow for automatic deployment"
-    implemented: true
-    working: true
-    file: ".github/workflows/deploy.yml"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
-        - working: true
-          agent: "main"
-          comment: "Created comprehensive GitHub Actions workflow for automatic deployment to GitHub Pages on push to main/master branch."
+          comment: "Remplacement réussi des tons amber/stone/yellow par des tons rose/nude dans toute l'application. Mise à jour cohérente de tous les composants."
 
-  - task: "Fix dependency resolution conflicts (npm ERESOLVE error)"
+  - task: "Page d'accueil avec image fournie et écriture calligraphique"
     implemented: true
     working: true
-    file: "frontend/package.json, frontend/src/components/ui/calendar.jsx"
+    file: "frontend/src/pages/HomePage.jsx, frontend/public/index.html"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
         - working: true
           agent: "main"
-          comment: "Fixed date-fns/react-day-picker version conflict by upgrading react-day-picker to v9.8.1, updated React to 19.1.1, migrated calendar component to new Chevron API, and ensured yarn compatibility. Dependency installation and build process now work correctly."
+          comment: "Integration réussie de l'image utilisateur comme background, ajout de la police Dancing Script pour Amel & Tarek, texte en noir comme demandé."
 
-  - task: "Update Google Form integration for RSVP"
+  - task: "Programme reformaté avec tirets"
     implemented: true
     working: true
-    file: "frontend/src/pages/ConfirmationPage.jsx"
+    file: "frontend/src/pages/HomePage.jsx"
     stuck_count: 0
     priority: "medium"
     needs_retesting: false
     status_history:
         - working: true
           agent: "main"
-          comment: "Google Form URL already correctly integrated. User-provided form URL matches the one in the code."
+          comment: "Programme simplifié avec format à tirets : '11h - Mairie de St Cyr', '17h - Cocktail', '20h - Diner', '22h30 - Soirée dansante'"
+
+  - task: "Suppression des onglets 'Infos utiles' et 'Contact'"
+    implemented: true
+    working: true
+    file: "frontend/src/components/Navigation.jsx, frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Navigation simplifiée à 3 onglets : Accueil, Détails, Confirmation. Routes supprimées de App.js."
+
+  - task: "Ajout nouvelles sections dans page Détails"
+    implemented: true
+    working: true
+    file: "frontend/src/pages/DetailsPage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Ajout de 3 nouvelles sections après transport : Enfants-friendly (kids zone + babysitter), Allergies alimentaires, Moments magiques (photos). Toutes avec design cohérent rose/nude."
 
 ## metadata:
   created_by: "main_agent"
