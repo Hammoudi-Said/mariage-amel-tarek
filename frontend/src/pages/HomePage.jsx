@@ -58,10 +58,10 @@ const HomePage = () => {
       </section>
 
       {/* Program Section */}
-      <section id="program-section" className="py-16 px-6">
+      <section id="program-section" className="py-16 px-6 bg-gradient-to-br from-rose-50 to-pink-25">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-serif text-amber-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-serif text-rose-900 mb-4">
               Rejoignez-nous
             </h2>
             <p className="text-xl font-serif text-stone-600">
@@ -69,29 +69,19 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 mb-12">
+          <div className="space-y-4 mb-12 max-w-2xl mx-auto">
             {programDetails.map((item, index) => (
-              <Card key={index} className="p-6 bg-white/70 backdrop-blur-sm border-amber-200/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center">
-                    {item.icon}
-                  </div>
-                  <div>
-                    <div className="text-2xl font-serif text-amber-800 mb-1">
-                      {item.time}
-                    </div>
-                    <div className="text-stone-700 font-medium">
-                      {item.event}
-                    </div>
-                  </div>
+              <div key={index} className="bg-white/70 backdrop-blur-sm rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-rose-200/50">
+                <div className="text-xl font-serif text-rose-800 text-center">
+                  {item}
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
 
           <div className="text-center">
             <Link to="/details">
-              <Button className="bg-amber-700 hover:bg-amber-800 text-white font-serif text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="bg-rose-700 hover:bg-rose-800 text-white font-serif text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
                 Retrouvez tous les détails
               </Button>
             </Link>
