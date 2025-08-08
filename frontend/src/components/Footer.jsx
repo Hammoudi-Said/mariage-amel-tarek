@@ -97,9 +97,6 @@ const Footer = () => {
               <p className="text-2xl font-serif text-amber-900 mb-4">
                 Amel & Tarek • 11 Octobre 2025
               </p>
-              <p className="font-medium">
-                Cérémonie: 11h • Cocktail: 17h • Dîner: 20h • Soirée: 22h30
-              </p>
               <p className="text-sm opacity-75">
                 Mairie de Saint Cyr l'école & Château De Neuville, Gambais
               </p>
