@@ -21,21 +21,27 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-amber-900 mb-8 leading-tight">
-            Marhaba
-          </h1>
-          <div className="space-y-4 mb-12">
-            <h2 className="text-2xl md:text-4xl font-serif text-stone-700 mb-2">
-              au mariage de
+      {/* Hero Section with provided image */}
+      <section 
+        className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative"
+        style={{
+          backgroundImage: `url('https://customer-assets.emergentagent.com/job_f7c12440-5440-41fc-8bf3-6d8d6ea86fe9/artifacts/k76gx2r5_1754605409302blob.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-white/20"></div>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <div className="space-y-8 mb-12 text-black">
+            <h2 className="text-2xl md:text-3xl font-serif text-black/80 mb-4">
+              MARHABA AU MARIAGE DE
             </h2>
-            <div className="text-4xl md:text-6xl font-serif text-amber-800 mb-4">
+            <div className="text-5xl md:text-7xl lg:text-8xl font-serif text-black mb-8 leading-tight" style={{fontFamily: "'Dancing Script', cursive, serif"}}>
               Amel & Tarek
             </div>
-            <div className="text-xl md:text-2xl font-serif text-stone-600 border-t border-b border-amber-200 py-4 inline-block px-8">
-              11.10.2025
+            <div className="text-lg md:text-xl font-serif text-black/70 border-t border-b border-black/30 py-4 inline-block px-8">
+              11 Octobre 2025
             </div>
           </div>
           
@@ -43,7 +49,7 @@ const HomePage = () => {
             onClick={scrollToProgram}
             variant="outline"
             size="lg"
-            className="bg-white/80 border-amber-300 text-amber-900 hover:bg-amber-50 font-serif text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-white/80 border-rose-300 text-rose-900 hover:bg-rose-50 font-serif text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <ArrowDown className="h-5 w-5 mr-2 animate-bounce" />
             Découvrir le programme
