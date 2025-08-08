@@ -103,6 +103,42 @@ const DetailsPage = () => {
               </div>
             </Card>
           </div>
+          
+          {/* Nouvelles sections après "Tout ce que vous devez savoir pour vous y rendre" */}
+          <div className="space-y-6 mt-8">
+            {/* Section enfants-friendly */}
+            <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
+              <div className="flex items-center mb-6">
+                <MapPin className="h-6 w-6 text-rose-600 mr-3" />
+                <h3 className="text-2xl font-serif text-rose-900">Enfants-friendly</h3>
+              </div>
+              <p className="text-stone-700 text-lg leading-relaxed">
+                Nous sommes Enfants-friendly, il y aura une kids zone pour vos enfants avec une babysitter qui s'occupera de la garde et de l'animation. Il y aura également une pièce à l'étage pour qu'ils puissent dormir tranquillement (s'ils arrivent à dormir...).
+              </p>
+            </Card>
+
+            {/* Section allergies alimentaires */}
+            <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
+              <div className="flex items-center mb-6">
+                <Clock className="h-6 w-6 text-rose-600 mr-3" />
+                <h3 className="text-2xl font-serif text-rose-900">Allergies alimentaires</h3>
+              </div>
+              <p className="text-stone-700 text-lg leading-relaxed">
+                N'oubliez pas de nous indiquer vos allergies ou restrictions alimentaires lors de votre confirmation pour que nous puissions adapter le menu du dîner.
+              </p>
+            </Card>
+
+            {/* Section photos */}
+            <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
+              <div className="flex items-center mb-6">
+                <Navigation className="h-6 w-6 text-rose-600 mr-3" />
+                <h3 className="text-2xl font-serif text-rose-900">Moments magiques</h3>
+              </div>
+              <p className="text-stone-700 text-lg leading-relaxed">
+                N'hésitez pas à capturer ces moments magiques ! Nous partagerons également les photos officielles avec vous.
+              </p>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
