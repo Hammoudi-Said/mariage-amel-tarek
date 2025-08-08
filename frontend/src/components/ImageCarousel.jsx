@@ -5,16 +5,16 @@ import { Button } from "./ui/button";
 const ImageCarousel = () => {
   const images = [
     {
-      url: "https://customer-assets.emergentagent.com/job_wedding-redesign/artifacts/6kbjgk0r_CHOIX%20PHOTO.png",
-      alt: "Château De Neuville - Notre lieu de réception",
+      url: "https://customer-assets.emergentagent.com/job_photo-showcase-17/artifacts/k7ygy1by_478822589_18488656270039035_2468781096162147640_n.jpg",
+      alt: "Château De Neuville au coucher du soleil",
     },
     {
-      url: "https://images.unsplash.com/photo-1750684016605-f1f499fa423e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxmcmVuY2glMjBjaGF0ZWF1JTIwd2VkZGluZ3xlbnwwfHx8fDE3NTQ0OTgxNTh8MA&ixlib=rb-4.1.0&q=85",
-      alt: "Vue du château avec invités",
+      url: "https://customer-assets.emergentagent.com/job_photo-showcase-17/artifacts/01p87bd3_neuville2.png",
+      alt: "Vue aérienne du Château De Neuville",
     },
     {
-      url: "https://images.unsplash.com/photo-1632745746983-d279278f1070?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHx2ZXJzYWlsbGVzJTIwcGFsYWNlfGVufDB8fHx8MTc1NDQ5ODE2NHww&ixlib=rb-4.1.0&q=85",
-      alt: "Élégance royale du château",
+      url: "https://customer-assets.emergentagent.com/job_photo-showcase-17/artifacts/terghtb3_veuville1.png",
+      alt: "Château De Neuville avec calèche d'époque",
     },
   ];
 
