@@ -33,11 +33,11 @@ const HomePage = () => {
       >
         <div className="absolute inset-0 bg-white/20"></div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <div className="space-y-8 mb-12 text-black">
-            <h2 className="text-2xl md:text-3xl font-serif text-black/80 mb-4">
+          <div className="space-y-6 mb-12">
+            <h2 className="text-2xl md:text-3xl font-serif text-black/80">
               MARHABA AU MARIAGE DE
             </h2>
-            <div className="text-5xl md:text-7xl lg:text-8xl font-serif text-black mb-8 leading-tight" style={{fontFamily: "'Dancing Script', cursive, serif"}}>
+            <div className="text-5xl md:text-7xl lg:text-8xl font-serif text-black leading-tight" style={{fontFamily: "'Dancing Script', cursive, serif"}}>
               Amel & Tarek
             </div>
             <div className="text-lg md:text-xl font-serif text-black/70 border-t border-b border-black/30 py-4 inline-block px-8">
