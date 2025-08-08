@@ -25,7 +25,7 @@ const HomePage = () => {
       <section 
         className="min-h-screen flex flex-col items-center justify-end pb-32 px-6 text-center relative overflow-hidden"
         style={{
-          backgroundImage: `url('https://customer-assets.emergentagent.com/job_f7c12440-5440-41fc-8bf3-6d8d6ea86fe9/artifacts/k76gx2r5_1754605409302blob.jpg')`,
+          backgroundImage: `url('https://customer-assets.emergentagent.com/job_photo-showcase-17/artifacts/j8geuif1_CHOIX%20PHOTO.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
