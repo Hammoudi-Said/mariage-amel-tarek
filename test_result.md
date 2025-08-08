@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-## user_problem_statement: "Fix and improve the repository to be deployed to github pages"
+## user_problem_statement: "Moderniser le design du site de mariage avec des tons nude/rose, écriture calligraphique, programme avec tirets, suppression d'onglets, et ajout de nouvelles sections"
 
 ## backend:
   - task: "Remove backend dependencies for static deployment"
