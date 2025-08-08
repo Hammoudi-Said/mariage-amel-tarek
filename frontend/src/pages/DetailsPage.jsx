@@ -17,10 +17,10 @@ const DetailsPage = () => {
 
         <div className="space-y-8">
           {/* Programme détaillé */}
-          <Card className="p-8 bg-white/80 backdrop-blur-sm border-amber-200/50 shadow-lg">
+          <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
             <div className="flex items-center mb-6">
-              <Clock className="h-6 w-6 text-amber-600 mr-3" />
-              <h2 className="text-2xl font-serif text-amber-900">Programme de la journée</h2>
+              <Clock className="h-6 w-6 text-rose-600 mr-3" />
+              <h2 className="text-2xl font-serif text-rose-900">Programme de la journée</h2>
             </div>
             <div className="prose max-w-none">
               <p className="text-stone-700 text-lg leading-relaxed mb-6">
