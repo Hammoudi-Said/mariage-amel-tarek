@@ -20,7 +20,7 @@ const ConfirmationPage = () => {
           </h1>
           <p className="text-xl font-serif text-stone-700 leading-relaxed">
             Votre présence à nos côtés serait un <span className="text-rose-600 font-medium">immense cadeau</span>.
-            Merci de confirmer avant le <strong>20 septembre 2025</strong>.
+            Merci de nous confirmer votre présence.
           </p>
         </div>
 
