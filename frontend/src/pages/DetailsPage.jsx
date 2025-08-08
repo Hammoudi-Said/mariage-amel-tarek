@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "../components/ui/card";
-import { MapPin, Car, Train, Clock, Navigation } from "lucide-react";
+import { MapPin, Car, Train, Clock, Navigation, Baby, UtensilsCrossed, Camera } from "lucide-react";
 
 const DetailsPage = () => {
   return (
@@ -104,12 +104,16 @@ const DetailsPage = () => {
             </Card>
           </div>
           
-          {/* Nouvelles sections après "Tout ce que vous devez savoir pour vous y rendre" */}
-          <div className="space-y-6 mt-8">
+          {/* Nouvelle section regroupée pour les informations pratiques */}
+          <div className="space-y-6 mt-12">
+            <h2 className="text-3xl font-serif text-rose-900 text-center mb-8">
+              Informations pratiques pour votre confort
+            </h2>
+
             {/* Section enfants-friendly */}
             <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
               <div className="flex items-center mb-6">
-                <MapPin className="h-6 w-6 text-rose-600 mr-3" />
+                <Baby className="h-6 w-6 text-rose-600 mr-3" />
                 <h3 className="text-2xl font-serif text-rose-900">Enfants-friendly</h3>
               </div>
               <p className="text-stone-700 text-lg leading-relaxed">
@@ -120,7 +124,7 @@ const DetailsPage = () => {
             {/* Section allergies alimentaires */}
             <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
               <div className="flex items-center mb-6">
-                <Clock className="h-6 w-6 text-rose-600 mr-3" />
+                <UtensilsCrossed className="h-6 w-6 text-rose-600 mr-3" />
                 <h3 className="text-2xl font-serif text-rose-900">Allergies alimentaires</h3>
               </div>
               <p className="text-stone-700 text-lg leading-relaxed">
@@ -131,7 +135,7 @@ const DetailsPage = () => {
             {/* Section photos */}
             <Card className="p-8 bg-white/80 backdrop-blur-sm border-rose-200/50 shadow-lg">
               <div className="flex items-center mb-6">
-                <Navigation className="h-6 w-6 text-rose-600 mr-3" />
+                <Camera className="h-6 w-6 text-rose-600 mr-3" />
                 <h3 className="text-2xl font-serif text-rose-900">Moments magiques</h3>
               </div>
               <p className="text-stone-700 text-lg leading-relaxed">

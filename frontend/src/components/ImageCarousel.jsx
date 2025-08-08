@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 const ImageCarousel = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1750683556251-7ea33d90081a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxmcmVuY2glMjBjaGF0ZWF1JTIwd2VkZGluZ3xlbnwwfHx8fDE3NTQ0OTgxNTh8MA&ixlib=rb-4.1.0&q=85",
-      alt: "Entrée majestueuse du château",
+      url: "https://customer-assets.emergentagent.com/job_wedding-redesign/artifacts/mvg98r4c_CHOIX%20PHOTO.HEIC",
+      alt: "Notre lieu de réception",
     },
     {
       url: "https://images.unsplash.com/photo-1750684016605-f1f499fa423e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxmcmVuY2glMjBjaGF0ZWF1JTIwd2VkZGluZ3xlbnwwfHx8fDE3NTQ0OTgxNTh8MA&ixlib=rb-4.1.0&q=85",
