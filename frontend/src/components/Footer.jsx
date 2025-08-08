@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Featured château image */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12 transform hover:scale-[1.02] transition-transform duration-700">
             <img
-              src="https://images.unsplash.com/photo-1632745746983-d279278f1070?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHx2ZXJzYWlsbGVzJTIwcGFsYWNlfGVufDB8fHx8MTc1NDQ5ODE2NHww&ixlib=rb-4.1.0&q=85"
+              src="https://customer-assets.emergentagent.com/job_photo-showcase-17/artifacts/j8geuif1_CHOIX%20PHOTO.png"
               alt="Château De Neuville"
               className="w-full h-64 md:h-80 lg:h-96 object-cover"
             />
