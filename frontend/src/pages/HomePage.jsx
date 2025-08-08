@@ -33,6 +33,19 @@ const HomePage = () => {
       >
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
+          {/* Wedding Names */}
+          <div className="text-center mb-16">
+            <p className="text-stone-100 font-serif text-lg md:text-xl mb-2 tracking-wide">
+              MARHABA AU MARIAGE DE
+            </p>
+            <h1 className="text-white text-6xl md:text-8xl font-script mb-4" style={{fontFamily: 'Dancing Script, cursive'}}>
+              Amel & Tarek
+            </h1>
+            <p className="text-stone-200 font-serif text-xl md:text-2xl">
+              11 Octobre 2025
+            </p>
+          </div>
+          
           <Button
             onClick={scrollToProgram}
             variant="outline"
