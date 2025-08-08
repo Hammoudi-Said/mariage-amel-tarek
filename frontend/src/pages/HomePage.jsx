@@ -23,7 +23,7 @@ const HomePage = () => {
     <div className="min-h-screen">
       {/* Hero Section with provided image */}
       <section 
-        className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative"
+        className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden"
         style={{
           backgroundImage: `url('https://customer-assets.emergentagent.com/job_f7c12440-5440-41fc-8bf3-6d8d6ea86fe9/artifacts/k76gx2r5_1754605409302blob.jpg')`,
           backgroundSize: 'cover',
@@ -31,16 +31,16 @@ const HomePage = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-white/20"></div>
-        <div className="max-w-4xl mx-auto relative z-10">
-          <div className="space-y-6 mb-12">
-            <h2 className="text-2xl md:text-3xl font-serif text-black/80">
+        <div className="absolute inset-0 bg-white/10"></div>
+        <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center justify-center">
+          <div className="text-center space-y-8 mb-16">
+            <h1 className="text-2xl md:text-3xl font-serif text-black/90 tracking-wide">
               MARHABA AU MARIAGE DE
-            </h2>
-            <div className="text-5xl md:text-7xl lg:text-8xl font-serif text-black leading-tight" style={{fontFamily: "'Dancing Script', cursive, serif"}}>
+            </h1>
+            <h2 className="text-6xl md:text-8xl lg:text-9xl text-black leading-none font-bold" style={{fontFamily: "'Dancing Script', cursive"}}>
               Amel & Tarek
-            </div>
-            <div className="text-lg md:text-xl font-serif text-black/70 border-t border-b border-black/30 py-4 inline-block px-8">
+            </h2>
+            <div className="text-xl md:text-2xl font-serif text-black/80 border-t border-b border-black/40 py-4 inline-block px-12">
               11 Octobre 2025
             </div>
           </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
             onClick={scrollToProgram}
             variant="outline"
             size="lg"
-            className="bg-white/80 border-rose-300 text-rose-900 hover:bg-rose-50 font-serif text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-white/90 border-rose-400 text-rose-900 hover:bg-rose-50 font-serif text-lg px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <ArrowDown className="h-5 w-5 mr-2 animate-bounce" />
             Découvrir le programme
