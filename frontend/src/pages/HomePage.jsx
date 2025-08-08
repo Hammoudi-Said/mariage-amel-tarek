@@ -7,26 +7,10 @@ import ImageCarousel from "../components/ImageCarousel";
 
 const HomePage = () => {
   const programDetails = [
-    {
-      time: "11h",
-      event: "Cérémonie à la Mairie de Saint Cyr l'école",
-      icon: <MapPin className="h-5 w-5 text-amber-600" />,
-    },
-    {
-      time: "17h",
-      event: "Cocktail de Bienvenue",
-      icon: <Clock className="h-5 w-5 text-amber-600" />,
-    },
-    {
-      time: "20h",
-      event: "Dîner",
-      icon: <Utensils className="h-5 w-5 text-amber-600" />,
-    },
-    {
-      time: "22h30",
-      event: "Soirée dansante",
-      icon: <Music className="h-5 w-5 text-amber-600" />,
-    },
+    "11h - Mairie de St Cyr",
+    "17h - Cocktail", 
+    "20h - Diner",
+    "22h30 - Soirée dansante"
   ];
 
   const scrollToProgram = () => {
