@@ -93,7 +93,7 @@ const HomePage = () => {
       <section className="py-16 px-6 bg-white/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-serif text-amber-900 mb-4">
+            <h3 className="text-3xl md:text-4xl font-serif text-rose-900 mb-4">
               Château De Neuville
             </h3>
             <p className="text-stone-600 font-serif text-lg">
