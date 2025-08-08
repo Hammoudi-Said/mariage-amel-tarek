@@ -31,7 +31,7 @@ const HomePage = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-transparent"></div>
         <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
           {/* Wedding Names */}
           <div className="text-center mb-16">
