@@ -7,22 +7,22 @@ import ImageCarousel from "../components/ImageCarousel";
 
 const HomePage = () => {
   const programDetails = [
-    "11h - Mairie de St Cyr",
-    "17h - Cocktail", 
+    "13h30 - Mairie de St Cyr",
+    "17h - Cocktail",
     "20h - Diner",
     "22h30 - Soirée dansante"
   ];
 
   const scrollToProgram = () => {
-    document.getElementById('program-section').scrollIntoView({ 
-      behavior: 'smooth' 
+    document.getElementById('program-section').scrollIntoView({
+      behavior: 'smooth'
     });
   };
 
   return (
     <div className="min-h-screen">
       {/* Hero Section with provided image */}
-      <section 
+      <section
         className="min-h-screen flex flex-col items-center justify-end pb-32 px-6 text-center relative overflow-hidden"
         style={{
           backgroundImage: `url('https://customer-assets.emergentagent.com/job_f7c12440-5440-41fc-8bf3-6d8d6ea86fe9/artifacts/k76gx2r5_1754605409302blob.jpg')`,
