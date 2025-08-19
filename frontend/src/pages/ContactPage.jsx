@@ -124,7 +124,7 @@ const ContactPage = () => {
                   Programme
                 </h3>
                 <div className="space-y-1 text-sm text-stone-700">
-                  <p><strong>11h:</strong> Cérémonie à la Mairie</p>
+                  <p><strong>13h30:</strong> Cérémonie à la Mairie</p>
                   <p><strong>17h:</strong> Cocktail de Bienvenue</p>
                   <p><strong>20h:</strong> Dîner au Château</p>
                   <p><strong>22h30:</strong> Soirée dansante</p>

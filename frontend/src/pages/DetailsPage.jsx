@@ -24,7 +24,7 @@ const DetailsPage = () => {
             </div>
             <div className="prose max-w-none">
               <p className="text-stone-700 text-lg leading-relaxed mb-6">
-                Notre mariage commencera à <strong>11h</strong> à la mairie de Saint Cyr l'école, 
+                Notre mariage commencera à <strong>13h30</strong> à la mairie de Saint Cyr l'école, 
                 puis vous êtes attendus au Château De Neuville à partir de <strong>17h</strong>.
               </p>
             </div>
