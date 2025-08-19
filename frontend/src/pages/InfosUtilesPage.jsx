@@ -115,7 +115,7 @@ const InfosUtilesPage = () => {
           </div>
           <div className="space-y-3 text-center">
             <div className="flex justify-between items-center py-2 border-b border-amber-100">
-              <span className="font-medium text-amber-800">11h00</span>
+              <span className="font-medium text-amber-800">13h30</span>
               <span className="text-stone-700">Cérémonie à la Mairie</span>
             </div>
             <div className="flex justify-between items-center py-2 border-b border-amber-100">
